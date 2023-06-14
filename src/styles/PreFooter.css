@@ -1,0 +1,112 @@
+.PreFooter {
+    margin: 5vmax 0 0 0;
+    background-color: #fff;
+    padding: 1vmax;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.PreFooter div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #979797;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.PreFooter div:hover svg {
+    fill: rgb(34, 34, 34);
+}
+
+.PreFooter div:hover p {
+    color: rgb(18, 18, 18);
+}
+
+.PreFooter span {
+    text-align: left;
+}
+
+.PreFooter svg {
+    transform: scale(2) translateY(-0.2vmax);
+    fill: rgba(37, 37, 37, 0.322);
+    margin: 2vmax;
+}
+
+.PreFooter-2 {
+    display: grid;
+    height: 150px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.PreFooter-2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PreFooter-2 div p {
+    color: #000000dc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vmax;
+    width: 18vmax;
+    margin: 0%;
+}
+
+.PreFooter-2 div span {
+    color: #979797;
+    width: 18vmax;
+    font-size: 1vmax;
+}
+
+.PreFooter-2 div div {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.PreFooter-2 div div input {
+    border: 1px solid #888;
+    outline: none;
+    padding: 0.5vmax 1vmax;
+    background: #fff;
+    font-size: 1vmax;
+    width: 16vmax;
+}
+
+.PreFooter-2 div div button {
+    border: none;
+    padding: 0.3vmax;
+    background: #fff;
+    outline: none;
+    position: relative;
+    right: 2vw;
+}
+
+.PreFooter-2 div div {
+    border: 1px solid #fff;
+}
+
+.PreFooter-2 div:nth-child(2) span {
+    width: 14vmax;
+}
+
+.PreFooter-2 div:nth-child(2) p {
+    width: 14vmax;
+}
+
+.PreFooter-2 div:nth-child(4) {
+    flex-direction: row;
+}
+
+.PreFooter-2 div:nth-child(4) svg {
+    cursor: pointer;
+    margin: 1vmax;
+    fill: #979797;
+}
+
+.PreFooter-2 div:nth-child(4) svg:hover {
+    fill: #222;
+}

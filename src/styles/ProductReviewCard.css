@@ -1,0 +1,22 @@
+.ProductReviewCard {
+    width: 45vmax;
+    cursor: pointer;
+    padding-bottom: 2vmax;
+    transition: all 0.5s;
+}
+
+.ProductReviewCard:hover {
+    transform: translateY(-0.4vmax);
+    box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+}
+
+.ProductReviewCard img {
+    padding-bottom: 1vmax;
+    width: 100%;
+}
+
+.ProductReviewCard h5,
+.ProductReviewCard b,
+.ProductReviewCard span {
+    padding: 0.2vmax 1.6vmax;
+}
