@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import NavCard from './NavCard.js'
 import "../styles/NavOptions.css"
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const NavOptions = ({ miPhones, redmiPhones, tv, laptop, fitnessAndLifeStyle, home, audio, accessories }) => {
 
@@ -12,6 +14,15 @@ const NavOptions = ({ miPhones, redmiPhones, tv, laptop, fitnessAndLifeStyle, ho
     const [homeToggle, setHomeToggle] = useState(false)
     const [audioToggle, setAudioToggle] = useState(false)
     const [accessoriesToggle, setAccessoriesToggle] = useState(false)
+
+    gsap.registerPlugin(useGSAP);
+    useGSAP(
+        () => {
+            var navTl = gsap.timeline({Delay: 1});
+            navTl.from('.logo', { y: 40, duration:1, delay:0.3, opacity:0, stagger: 0.1 }); 
+            navTl.from('.navlinks', { y: 20, duration:1, opacity:0, stagger: 0.1 }); 
+        }
+    );
 
     useEffect(() => {
         if (window.location.pathname === "/miPhones") {
